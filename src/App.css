@@ -1,4 +1,4 @@
-*{
+* {
   padding: 0;
   margin: 0;
   font-size: 14px;
@@ -6,11 +6,16 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-rendering: optimizeLegibility;
-  user-select: none; /* supported by Chrome and Opera */
-  -webkit-user-select: none; /* Safari */
-  -khtml-user-select: none; /* Konqueror HTML */
-  -moz-user-select: none; /* Firefox */
-  -ms-user-select: none; /* Internet Explorer/Edge */
+  user-select: none;
+  /* supported by Chrome and Opera */
+  -webkit-user-select: none;
+  /* Safari */
+  -khtml-user-select: none;
+  /* Konqueror HTML */
+  -moz-user-select: none;
+  /* Firefox */
+  -ms-user-select: none;
+  /* Internet Explorer/Edge */
 }
 
 #contents {
@@ -55,7 +60,10 @@ header a:hover {
   font-weight: 600;
 }
 
-.filter-years-container, .filter-genres-container, .filter-popular-container, .filter-rating-container {
+.filter-years-container,
+.filter-genres-container,
+.filter-popular-container,
+.filter-rating-container {
   margin-bottom: 10px;
 }
 
@@ -65,7 +73,8 @@ header a:hover {
   height: fit-content;
 }
 
-.filter-years-input-container input, .filter-rating-container input {
+.filter-years-input-container input,
+.filter-rating-container input {
   width: 60px;
   padding: 5px;
   border-radius: 7px;
@@ -78,12 +87,14 @@ header a:hover {
 }
 
 
-.filter-genre-items-container, .filter-popular-items-container {
+.filter-genre-items-container,
+.filter-popular-items-container {
   display: flex;
   flex-wrap: wrap;
 }
 
-.filter-genre-item, .filter-popular-item {
+.filter-genre-item,
+.filter-popular-item {
   display: flex;
   margin: 4px 6px 4px 0;
   align-items: center;
@@ -93,7 +104,8 @@ header a:hover {
   box-shadow: 1.5px 2px 0 rgb(19, 100, 250);
 }
 
-.filter-genre-item p, .filter-popular-item p {
+.filter-genre-item p,
+.filter-popular-item p {
   margin-right: 5px;
 }
 
@@ -130,13 +142,13 @@ header a:hover {
 }
 
 #apply-button {
-  background: rgb(53,167,150);
-  background: linear-gradient(90deg, rgba(53,167,150,1) 0%, rgba(68,222,132,1) 100%);
+  background: rgb(53, 167, 150);
+  background: linear-gradient(90deg, rgba(53, 167, 150, 1) 0%, rgba(68, 222, 132, 1) 100%);
 }
 
 #reset-button {
-  background: rgb(167,53,67);
-  background: linear-gradient(90deg, rgba(167,53,67,1) 0%, rgba(244,43,128,1) 100%);
+  background: rgb(167, 53, 67);
+  background: linear-gradient(90deg, rgba(167, 53, 67, 1) 0%, rgba(244, 43, 128, 1) 100%);
 }
 
 #movie-details-container {
@@ -177,7 +189,7 @@ header a:hover {
   flex-wrap: wrap;
 }
 
-.movie-subdetails-container p{
+.movie-subdetails-container p {
   cursor: pointer;
   margin: 4px 3px;
   font-weight: 600;
@@ -243,7 +255,7 @@ header a:hover {
   justify-content: center;
 }
 
-.genres-container p{
+.genres-container p {
   cursor: pointer;
   margin: 4px 3px;
   border: 1.5px solid #ccc;
@@ -286,7 +298,9 @@ header a:hover {
   height: 100px;
 }
 
-#shuffle-button-top, #shuffle-button-bottom, #filter-button {
+#shuffle-button-top,
+#shuffle-button-bottom,
+#filter-button {
   cursor: pointer;
   padding: 10px 15px;
   font-size: 16px;
@@ -302,16 +316,20 @@ header a:hover {
 }
 
 #filter-button {
-  background: rgb(244,208,43);
-  background: linear-gradient(90deg, rgba(244,208,43,1) 0%, rgba(242,160,43,1) 100%);
+  background: rgb(244, 208, 43);
+  background: linear-gradient(90deg, rgba(244, 208, 43, 1) 0%, rgba(242, 160, 43, 1) 100%);
 }
 
-#shuffle-button-top:hover, #shuffle-button-bottom:hover, #filter-button:hover {
+#shuffle-button-top:hover,
+#shuffle-button-bottom:hover,
+#filter-button:hover {
   padding: 10px 23px;
   letter-spacing: 3px;
 }
 
-#shuffle-button-top:active, #shuffle-button-bottom:active, #filter-button:active {
+#shuffle-button-top:active,
+#shuffle-button-bottom:active,
+#filter-button:active {
   padding: 10px 15px;
   letter-spacing: 2px;
 }
@@ -351,11 +369,38 @@ footer {
   color: rgb(17, 84, 207);
 }
 
-footer div, footer a {
+footer div,
+footer a {
   font-size: 10px;
 }
 
 footer a {
   text-decoration: none;
   color: rgb(19, 100, 250);
+}
+
+.mainSide {
+  float: left;
+  width: 88px;
+  z-index: 99;
+}
+
+.mainSide .header-logo-menu {
+  z-index: 999;
+  position: fixed;
+  width: 256px;
+}
+
+.mainSide .header-logo-menu .header-logocontent {
+  /* -webkit-box-shadow: 0px 0 12px #888888;
+  box-shadow: 0px 0 12px #888888; */
+  width: 88px;
+  overflow: hidden;
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
+  background-color: #fff;
+}
+
+.mainSide .header-logo-menu .header-logocontent.hover {
+  width: 25%;
 }
